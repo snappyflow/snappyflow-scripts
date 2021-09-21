@@ -1,16 +1,16 @@
 #!/bin/bash
 #  * Copyright(c)2021 MapleLabs Inc
 #  *
-#  * This Shell script deploys snappyflow on-prem saas
+#  * This Shell script deploys snappyflow on Google Kubenetes Engine
 #  *
 
 set +x
 set -e
-echo "-------------------SnappyFlow On-prem-saas Google cloud------------------"
+echo "-------------------SnappyFlow Installation On Google cloud------------------"
 echo "-------------------------------------------------------------------------"
 
-DEFAULT_UNIQUE_NAME_PREFIX=onprem-sfapm
-DEFAULT_REGION=us-west2
+DEFAULT_UNIQUE_NAME_PREFIX=snappyflow
+DEFAULT_REGION=us-central1
 DEFAULT_ZONE=$DEFAULT_REGION-c
 DEFAULT_CLUSTER_INSTANCE_TYPE=e2-standard-4
 DEFAULT_CLUSTER_MIN_NODE=4

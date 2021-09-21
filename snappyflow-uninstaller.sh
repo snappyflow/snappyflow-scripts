@@ -1,7 +1,12 @@
+#!/bin/bash
+#  * Copyright(c)2021 MapleLabs Inc
+#  *
+#  * This Shell script uninstalls snappyflow from Google Kubenetes Engine
+#  *
 ENV_FILE=$1
 if [ ! -f $1 ]
 then
-    echo "SnappyFlow installation properties fle apm-env.sh not found"
+    echo "SnappyFlow installation properties file $1 not found"
     exit 0
 fi
 source $1
